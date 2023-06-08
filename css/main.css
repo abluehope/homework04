@@ -127,15 +127,15 @@
   transform: translate(-50%, -50%);
 }
 
-.main_visual .itm01 {
+.main_visual .main_slide_nestle {
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
     url(../images/slide_01.jpg) no-repeat center center/cover;
 }
-.main_visual .itm02 {
+.main_visual .main_slide_nescafe {
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
     url(../images/slide_02.jpg) no-repeat center center/cover;
 }
-.main_visual .itm03 {
+.main_visual .main_slide_kitkat {
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
     url(../images/slide_03.jpg) no-repeat center center/cover;
 }
