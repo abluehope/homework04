@@ -1,0 +1,271 @@
+/* * {
+  outline: 1px solid tomato;
+} */
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sec {
+  padding: 100px 0;
+}
+
+.sec .title {
+  max-width: 1200px;
+  margin: 0 auto 28px auto;
+  padding: 0 15px;
+}
+
+.sec h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.sec .title p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+/* 헤더 */
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 1px solid transparent;
+  z-index: 999;
+}
+
+.header .header_wrap {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  transition: 0.5s;
+}
+
+.header.on .header_wrap {
+  height: 70px;
+}
+
+.header img {
+  width: 150px;
+}
+
+.header .gnb {
+  margin: 0 0 0 auto;
+}
+
+.header .search {
+  margin: 0 0 0 50px;
+}
+
+.header .gnb > ul {
+  display: flex;
+  gap: 50px;
+}
+
+.header .gnb > ul > li {
+  position: relative;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+.header .gnb > ul > li ~ li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  width: 1px;
+  height: 12px;
+  background: #ddd;
+  transform: translate(0, -50%);
+}
+
+.header .search input[type="text"] {
+  width: 150px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #666;
+
+  font-size: 14px;
+  font-family: "Noto Sans KR";
+
+  transition: 0.5s;
+}
+
+.header .search input[type="text"]:focus {
+  width: 190px;
+}
+
+.header .search button {
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 20px;
+
+  vertical-align: middle;
+}
+
+/* 메인 비주얼 */
+.main_visual {
+  position: relative;
+}
+
+.main_visual .itm {
+  position: relative;
+  min-height: 800px;
+}
+
+.main_visual .itm .inner {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.main_visual .itm01 {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
+    url(../images/slide_01.jpg) no-repeat center center/cover;
+}
+.main_visual .itm02 {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
+    url(../images/slide_02.jpg) no-repeat center center/cover;
+}
+.main_visual .itm03 {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
+    url(../images/slide_03.jpg) no-repeat center center/cover;
+}
+
+.main_visual .itm h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 20px 0;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.333), 0 0 4px rgba(0, 0, 0, 0.333);
+}
+
+/* .main_visual .itm.on h3 {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: 0.5s 0.5s;
+} */
+
+.main_visual .itm p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 22px;
+  margin: 0 0 30px 0;
+}
+
+.main_visual .itm a {
+  color: #fff;
+}
+
+/* .main_visual .itm.on p {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: 0.5s 0.5s;
+} */
+
+.main_content .main_service {
+  display: flex;
+  gap: 30px;
+}
+
+.main_content .main_service > * {
+  position: relative;
+  flex: 1;
+}
+
+.main_content .main_service .img_box {
+  margin: 0 0 20px 0;
+  overflow: hidden;
+}
+
+.main_content .main_service h3 {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.main_content .main_service h3::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: #b18963;
+  margin: 10px 0 20px 0;
+}
+
+.main_content .main_service p {
+  font-size: 14px;
+  line-height: 18px;
+
+  margin: 0 0 10px 0;
+}
+
+.main_content .main_service span {
+  font-size: 14px;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+  padding: 30px 0 50px 0;
+  text-align: center;
+}
+
+.footer address {
+  margin: 0 0 10px 0;
+}
+
+.footer .footer_customer {
+  margin: 0 0 10px 0;
+  font-size: 0;
+}
+
+.footer .footer_customer li {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.footer .footer_customer li ~ li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background: #777;
+  margin: 0 10px;
+}
+
+.to_top {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.to_top.on {
+  bottom: 5%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.to_top i {
+  color: #fff;
+  background: #b18963;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
