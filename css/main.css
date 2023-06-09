@@ -270,7 +270,13 @@
   align-items: center;
   height: 100px;
 }
-
+.fl {
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 5px 20px;
+  background: #fff;
+  color: #333;
+}
 .footer .content ul {
   display: flex;
   align-items: center;
